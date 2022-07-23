@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "425347527515",
+    "firebase_url": "https://meditech-b320a-default-rtdb.firebaseio.com",
+    "project_id": "meditech-b320a",
+    "storage_bucket": "meditech-b320a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:425347527515:android:9116b56e42d27e45ed207e",
+        "android_client_info": {
+          "package_name": "com.example.emedicine"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "425347527515-cipl4t38u8eace0rhsosv5e7npgil639.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUPXeS1uepXy_osusKIfs-Li-ciIybd3g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "425347527515-cipl4t38u8eace0rhsosv5e7npgil639.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
