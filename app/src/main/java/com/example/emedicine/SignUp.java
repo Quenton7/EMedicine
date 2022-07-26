@@ -51,11 +51,16 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
             String user = username.getText().toString();
             String pass = pwd.getText().toString();
 
-            DBUsers users = new DBUsers(user,pass,name1,con);
-            dref.child(user).setValue(users);
-            Intent loginit = new Intent(this,MainActivity.class);
-            startActivity(loginit);
-            finish();
+            if(Validate(pass)) {
+                DBUsers users = new DBUsers(user, pass, name1, con);
+                dref.child(user).setValue(users);
+                Intent loginit = new Intent(this, MainActivity.class);
+                startActivity(loginit);
+                finish();
+            }
+            else{
+                Toast.makeText(getBaseContext(),"Invalid Password",Toast.LENGTH_LONG).show();
+            }
 
         }
     }

@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.method.ScrollingMovementMethod;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -37,6 +38,9 @@ public class Symptoms extends AppCompatActivity {
         symptoms = (TextView) findViewById(R.id.symptoms);
         medicine = (TextView) findViewById(R.id.medicine);
         disname = (TextView) findViewById(R.id.disText);
+
+        symptoms.setMovementMethod(new ScrollingMovementMethod());
+        medicine.setMovementMethod(new ScrollingMovementMethod());
 
         Bundle bundle = getIntent().getBundleExtra("data");
         name = bundle.getString("disease");
